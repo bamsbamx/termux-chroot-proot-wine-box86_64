@@ -57,6 +57,8 @@ update_install_base_packages(){
 	echo -e "${GREEN}Add x11-repo.${WHITE}"
 	pkg install -y x11-repo 
 	pkg update -y
+        echo -e "${GREEN}Install termux-x11-nightly.${WHITE}"
+	pkg install -y termux-x11-nightly 
 	echo -e "${GREEN}Install virgl, pulseaudio, xwayland, proot, wget.${WHITE}"
 	pkg install -y pulseaudio virglrenderer-android xwayland proot-distro wget unzip 
 	echo -e "${UYELLOW} Optional: Do you want to setup a ssh server (openssh)? (y/n)${WHITE}"
@@ -185,7 +187,7 @@ function rftc() {
 rftc check_if_is_installed 1
 rftc create_addons_menu_alias 4
 rftc update_install_base_packages 2
-rftc install_termux_x11_pkg_app 10
+#rftc install_termux_x11_pkg_app 10
 rftc setup_ubuntu_proot 2
 rftc install_termux_widget_app 2
 rftc create_shortcuts_for_widget 2
