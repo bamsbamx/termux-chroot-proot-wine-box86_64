@@ -16,7 +16,7 @@ esac
 echo -e "${GREEN}Clone the repo.${WHITE}"
 pkg install -y git
 cd ~
-git clone https://github.com/cheadrian/termux-chroot-proot-wine-box86_64
+git clone https://github.com/bamsbamx/termux-chroot-proot-wine-box86_64
 cd termux-chroot-proot-wine-box86_64/Scripts
 
 echo -e "${GREEN}Run the install script.${WHITE}"
