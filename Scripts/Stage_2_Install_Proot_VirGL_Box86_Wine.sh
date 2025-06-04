@@ -109,7 +109,7 @@ box64 '"$HOME/wine64/bin/wine64 "'"$@"' > /usr/local/bin/wine64
 create_wine86_wine64_prefix(){
 	set -e
 	echo -e "${GREEN}Create wine prefix for x86 and x64 version to ~/.wine32 and ~/.wine64.${WHITE}"
-	wine wineboot
+	#wine wineboot
 	wine64 wineboot
 }
 
